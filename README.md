@@ -36,7 +36,7 @@ To run the utility, type **'ant run'** after building. The default run command i
 Reporting Issues & Enhancements
 -------------------------------
 
-Please report any issues / suggest any enhancements using github. Suggestions / bug reports are welcome as are extensions containing additional functionality.
+Please report any issues using the github [issues](https://github.com/financialforcedev/object-model-tool/issues) feature. Suggestions / bug reports are welcome as are extensions containing additional functionality.
 
 License
 -------
