@@ -10,7 +10,7 @@ Introduction
 
 This tool was created to generate object-model/ERD Diagrams for custom objects in salesforce. There was a requirement for external diagrams that could not be filled by the internal salesforce schema builder or any other tool that I could find.
 
-As a result, I built an extensible, lightweight tool to generate and orginize object diagrams by functional area. The tool has multiple possible configurations and additional functionality can be built on top of the existing framework with ease.
+As a result, I built an extensible, lightweight tool to generate and organize object diagrams by functional area. The tool has multiple possible configurations and additional functionality can be built on top of the existing framework with ease.
 
 Summary
 -------
