@@ -1,0 +1,11 @@
+<areas>
+	<area>
+		<name>area_one</name>
+		<object>Test_Object_Parent__c</object>
+		<object>Test_Object_Child_2__c</object>
+	</area>
+	<area>
+		<name>area_two</name>
+		<object>Test_Object_Child_1__c</object>
+	</area>
+</areas>

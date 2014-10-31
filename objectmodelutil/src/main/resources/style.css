@@ -1,0 +1,227 @@
+/**
+ * Copyright (c) 2014, FinancialForce.com, inc
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification, 
+ *   are permitted provided that the following conditions are met:
+ *
+ * - Redistributions of source code must retain the above copyright notice, 
+ *      this list of conditions and the following disclaimer.
+ * - Redistributions in binary form must reproduce the above copyright notice, 
+ *      this list of conditions and the following disclaimer in the documentation 
+ *      and/or other materials provided with the distribution.
+ * - Neither the name of the FinancialForce.com, inc nor the names of its contributors 
+ *      may be used to endorse or promote products derived from this software without 
+ *      specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ *  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+ *  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL 
+ *  THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+ *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ *  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ *  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+**/
+
+@charset "UTF-8";
+
+body {
+	margin: 							0px;
+	padding:						 	0px;
+	font-family:      					Arial, Helvetica, sans-serif;
+	font-size: 							12px;
+	background-color:					#F8F8F8;
+	position:							absolute; 
+	width:								100%;
+	height: 							100%;
+}
+
+a {
+	text-decoration: 		none;
+	color:					#666;
+}
+
+a:hover {
+	text-decoration: 		underline;
+}
+
+div.table {
+	width: 								365px;
+	min-height: 						40px;
+	background-color: 					#3FA9F5;
+	padding-bottom:						1px;
+	border-radius: 						0px;
+	position: 							absolute;
+	z-index:							1;
+	opacity: 							0.80;
+}
+
+div#spacer {
+	width: 								405px;
+	height:								1px;
+	position: 							absolute;
+}
+
+div.table > .labelName {
+	height: 							30px;
+	line-height: 						30px;
+	color: 								#FFF;
+	padding-left: 						10px;
+    font-size: 14px;
+}
+
+div.table div {
+	width: 								348px;
+	height: 							30px;
+	line-height: 						30px;
+	margin-left:						1px;
+	background-color:                   #fff; 
+	overflow: 							hidden;
+	padding-left: 						15px;
+}
+
+div.table div ul {
+	padding-top: 						0px;
+	margin-top:							0px;
+}
+
+div.table div:hover {
+	cursor: 							pointer;
+}
+
+
+div.table div:nth-child(odd) {  
+  	background-color: 					#F2F2F2;
+}
+
+div.table div:nth-child(2) {  
+  	border-top-left-radius: 			2px;
+  	border-top-right-radius: 			2px;
+}
+
+div.table div:last-child {  
+  	border-bottom-left-radius: 			2px;
+  	border-bottom-right-radius: 		2px;
+}
+
+/* js plumb stuff */
+._jsPlumb_connector  {
+    opacity: 							0.3; 
+    z-index:							0;
+}
+
+._jsPlumb_connector:hover  {
+    opacity:							1; 
+}
+
+._jsPlumb_endpoint { 
+	z-index:							0; 
+}
+
+div.table > .expandButton {						
+	width:								16px;
+	height:								16px;
+	line-height: 						17px;
+	text-align: 						center;
+	color:								#FFF;
+	margin-right: 						7px;
+	margin-top:							7px;
+	float: 								right;
+	background-color: 					#3FA9F5;
+	padding:							0px;
+	border-radius: 						0px;
+}
+
+div.table > .hideButton {						
+	width:								16px;
+	height:								16px;
+	line-height: 						17px;
+	text-align: 						center;
+	color:								#fff;
+	margin-right: 						4px;
+	margin-top:							7px;
+	float: 								right;
+	background-color: 					#3FA9F5;
+	padding:							0px;
+	border-radius: 						0px;
+}
+
+div.table > .apiName {						
+	padding-left:						10px;
+	color:								#C8EAFC;
+	font-weight: 						normal;
+	font-size: 12px;
+}
+
+
+div.table > .hideButton:nth-child(odd) {						
+	background-color: 					#3FA9F5;
+}
+div.table > .hideButton:hover {
+    background-color: #fff;
+     color: #000;
+     border-radius: 2px;
+}
+
+div.table > .expandButton:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 2px;
+}
+
+div.header {
+	position:				absolute; 
+	top:					0px;
+	left: 					0px;
+	width:					100%; 
+	height:					40px;
+	background-color: 		#006BDE;
+}
+
+div.sidebar {
+	float:					left; 
+	width:					250px; 
+	height:					100%; 
+	overflow:				auto;
+	border-right:			1px solid #DDD;
+}
+
+div.sidebarLink{
+	height:					20px;
+	padding:				10px;
+	line-height:			20px;
+	border-bottom:			1px solid #DDD;
+}
+
+div.main { 
+	position: 				fixed;
+	width: 					100%;
+	height:					auto;
+	top:					40px;
+	bottom:					0;
+}
+
+div.container {
+	margin-left: 			251px;
+	background-color: 		#EEE;
+	height: 				100%;
+}
+
+div.containerInner {
+	position: 				relative;
+	height:					100%;
+	width:					100%;
+	margin-bottom: 			40px;
+}
+
+
+div#wrapper {
+	position: 				relative;
+	height:					100%;
+	width:					auto;
+	overflow: 				auto;
+
+	
+}
+

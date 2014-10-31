@@ -1,0 +1,46 @@
+<project xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:artifact="antlib:org.apache.maven.artifact.ant" name="test" default="build">
+	
+	<!-- set properties needed -->
+	<property name="run.arguments" value="retrieve.source=${basedir}/demo/src,
+										  input.areas=${basedir}/demo/testareas.xml" />
+
+	<!-- config file location -->
+	<property name="config.properties" value="${basedir}/config.properties" />
+
+	<!-- set config needed -->
+	<property name="config.input" value="com.financialforce.objectmodelutil.model.processor.input.InputProcessorXmlFile" />
+	<property name="config.retrieve" value="com.financialforce.objectmodelutil.model.processor.retrieve.RetrieveProcessorLocal" />
+	<property name="config.output" value="com.financialforce.objectmodelutil.model.processor.output.OutputProcessorHTMLwithFA" />
+
+	<!-- target to build the jar -->
+	<target name="build">
+		<path id="maven-ant-tasks.classpath" path="lib/maven-ant-tasks-2.1.3.jar" />
+		<typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+           		 uri="antlib:org.apache.maven.artifact.ant"
+           		 classpathref="maven-ant-tasks.classpath" />
+		<artifact:mvn>
+			<arg value="clean"/>
+			<arg value="compile"/>
+			<arg value="assembly:single"/>
+			<arg value="-DjdkLevel=1.6"/>
+  		</artifact:mvn>
+	</target>
+
+	<!-- run target -->
+	<target name="run">
+		<!-- set up the property file -->
+		<propertyfile file="${config.properties}" comment="Properties file for object-model-tool">
+			<entry key="input" value="${config.input}" />
+    		<entry key="retrieve" value="${config.retrieve}"/>
+    		<entry key="output" value="${config.output}"/>
+		</propertyfile>
+		<!-- define task and run it -->
+		<typedef name="objectmodelutil"
+             classname="com.financialforce.objectmodelutil.Ant"
+             classpath="${basedir}/target/objectmodelutil-0.0.1-jar-with-dependencies.jar"/>
+		<objectmodelutil args="${run.arguments}" configFile="${config.properties}"/>
+	</target>
+
+	
+
+</project>
