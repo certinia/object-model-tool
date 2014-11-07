@@ -26,6 +26,17 @@ Key Features
 * Can Provide draggable charts split by functional area in html format.
 * Can provide a list of custom objects and fields in CSV format.
 
+Configuration
+-------------
+
+The **ant run** command will build a **config.properties** file before running the utility. This file will contain the processors used by the utility to configure / retreive / output the chart data.
+
+##Input Processors:
+    
+_com.financialforce.objectmodelutil.model.processor.input.**InputProcessorXmlFile**_
+    
+Used to pull functional area information from an xml file in order to organise the chart objects by area. *(See objectmodelutil / demo / testareas.xml)*
+
 Build & Run
 -----------
 
