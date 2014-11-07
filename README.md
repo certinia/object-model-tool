@@ -33,7 +33,7 @@ The **ant run** command will build a **config.properties** file before running t
 
 ####Input Processors:
     
-_com.financialforce.objectmodelutil.model.processor.input.**InputProcessorXmlFile**_
+#####_com.financialforce.objectmodelutil.model.processor.input.**InputProcessorXmlFile**_
     
 Used to pull functional area information from an xml file in order to organise the chart objects by area. *(See objectmodelutil / demo / __testareas.xml__)*
 
@@ -58,7 +58,7 @@ Please report any issues using the github [issues](https://github.com/financialf
 Known Issues 
 ------------
 
-1.   Known Salesforce Issue : There are certain elements in a salesforce object xml definition that cannot be loaded by the Salesforce Java API Object. These need to be removed as and when they are found _**(Contributions Welcome!)**_:
+1.   **Known Salesforce Issue** : There are certain elements in a salesforce object xml definition that cannot be loaded by the Salesforce Java API Object. These need to be removed as and when they are found _**(Contributions Welcome!)**_:
 
      *(Example at: objectmodelutil / src / main / java / com / financialforce / objectmodelutil / model / processor / retrieve      / __RetrieveProcessorLocal.java (lines 109, 110)__)* 
      
