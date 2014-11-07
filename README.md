@@ -60,7 +60,7 @@ Known Issues
 
 1.   Known Salesforce Issue : There are certain elements in a salesforce object's xml definition that cannot be loaded by the Salesforce Jave API Object. These need to be hacked around:
 
-     *(Example at: / objectmodelutil / src / main / java / com / financialforce / objectmodelutil / model / processor / retrieve      / RetrieveProcessorLocal.java (lines 109, 110))* 
+     *(Example at: objectmodelutil / src / main / java / com / financialforce / objectmodelutil / model / processor / retrieve      / __RetrieveProcessorLocal.java (lines 109, 110)__)* 
      
      ```
      objectAsString = objectAsString.replace("UTF-8", "UTF_8");
