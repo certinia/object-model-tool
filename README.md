@@ -37,6 +37,18 @@ _com.financialforce.objectmodelutil.model.processor.input.**InputProcessorXmlFil
     
 Used to pull functional area information from an xml file in order to organise the chart objects by area. *(See objectmodelutil / demo / testareas.xml)*
 
+Note: a blank input processor can also be used use:
+
+```
+<propertyfile file="${config.properties}" comment="Properties file for object-model-tool">
+	<entry key="input" operation="del" />
+	<entry key="retrieve" value="${config.retrieve}"/>
+	<entry key="output" value="${config.output}"/>
+</propertyfile>
+```
+
+To achieve this.
+
 Build & Run
 -----------
 
