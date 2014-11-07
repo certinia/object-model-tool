@@ -29,7 +29,7 @@ Key Features
 Configuration
 -------------
 
-The **ant run** command will build a **config.properties** file before running the utility. This file will contain the processors used by the utility to configure / retreive / output the chart data.
+The **ant run** command will build a **config.properties** file before running the utility. This file will contain the processors used by the utility to configure / retreive / output the chart data. All configuration options are editable in *objectmodelutil / __build.xml__*.
 
 ####Input Processors:
     
@@ -37,17 +37,11 @@ _com.financialforce.objectmodelutil.model.processor.input.**InputProcessorXmlFil
     
 Used to pull functional area information from an xml file in order to organise the chart objects by area. *(See objectmodelutil / demo / testareas.xml)*
 
-Note: a blank input processor can also be used use:
-
+Note: a blank input processor can also be used if you do not want to organise your charting output. Use:
 ```
-<propertyfile file="${config.properties}" comment="Properties file for object-model-tool">
-	<entry key="input" operation="del" />
-	<entry key="retrieve" value="${config.retrieve}"/>
-	<entry key="output" value="${config.output}"/>
-</propertyfile>
+<entry key="input" operation="del" />
 ```
-
-To achieve this.
+in the ant ```<propertyfile></propertyfile``` to achieve this.
 
 Build & Run
 -----------
