@@ -46,9 +46,9 @@ in the ant ```<propertyfile></propertyfile``` to achieve this.
 Build & Run
 -----------
 
-To build the utility, check out the master branch, navigate to the **'objectmodelutil'** folder and from your console, type **'ant'** (this assumes you have ant installed).
+To build the utility, check out the master branch, navigate to the **_objectmodelutil_** folder and from your console, type **_ant_** (this assumes you have ant installed).
 
-To run the utility, type **'ant run'** after building. The default run command in **'build.xml'** points at the **'demo'** folder and performs a local retreive of metadata, arranging the output into functional areas specified in **'demo/testareas.xml'**.
+To run the utility, type **'ant run'** after building. The default run command in **_build.xml_** points at the _objectmodelutil / **demo**_ folder and performs a local retreive of metadata, arranging the output into functional areas specified in _objectmodelutil / demo / **testareas.xml**_.
 
 Reporting Issues & Enhancements
 -------------------------------
