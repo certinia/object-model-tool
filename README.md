@@ -35,7 +35,7 @@ The **ant run** command will build a **config.properties** file before running t
     
 _com.financialforce.objectmodelutil.model.processor.input.**InputProcessorXmlFile**_
     
-Used to pull functional area information from an xml file in order to organise the chart objects by area. *(See objectmodelutil / demo / testareas.xml)*
+Used to pull functional area information from an xml file in order to organise the chart objects by area. *(See objectmodelutil / demo / __testareas.xml__)*
 
 **Note:** a blank input processor can also be used if you do not want to organise your charting output. Use:
 ```
