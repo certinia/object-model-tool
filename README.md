@@ -58,7 +58,7 @@ Please report any issues using the github [issues](https://github.com/financialf
 Known Issues 
 ------------
 
-1.   Known Salesforce Issue : There are certain elements in a salesforce object's xml definition that cannot be loaded by the Salesforce Jave API Object. These need to be hacked around:
+1.   Known Salesforce Issue : There are certain elements in a salesforce object xml definition that cannot be loaded by the Salesforce Java API Object. These need to be removed as and when they are found _**(Contributions Welcome!)**_:
 
      *(Example at: objectmodelutil / src / main / java / com / financialforce / objectmodelutil / model / processor / retrieve      / __RetrieveProcessorLocal.java (lines 109, 110)__)* 
      
