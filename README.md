@@ -15,7 +15,7 @@ As a result, I built an extensible, lightweight tool to generate and organize ob
 Summary
 -------
 
-This tool is a command line utility (that also has an ant entry point). The output it produces is contained within a 'htmlcharts' folder. The utility reads salesforce metadata, either locally or from a salesforce org, and parses this information into object-model/ERD charts. These charts are provided in html format along with several helper files (javascript, css, etc). The charts can be arranged by functional area, in other words, split down into logical groups for easy digestion.
+This tool is a command line utility (that also has an ant entry point). The output it produces is contained within a _objectmodelutil / **htmlcharts**_ folder. The utility reads salesforce metadata, either locally or from a salesforce org, and parses this information into object-model/ERD charts. These charts are provided in html format along with several helper files (javascript, css, etc). The charts can be arranged by functional area, in other words, split down into logical groups for easy digestion.
 
 Key Features
 ------------
@@ -37,7 +37,7 @@ _com.financialforce.objectmodelutil.model.processor.input.**InputProcessorXmlFil
     
 Used to pull functional area information from an xml file in order to organise the chart objects by area. *(See objectmodelutil / demo / testareas.xml)*
 
-Note: a blank input processor can also be used if you do not want to organise your charting output. Use:
+**Note:** a blank input processor can also be used if you do not want to organise your charting output. Use:
 ```
 <entry key="input" operation="del" />
 ```
@@ -93,6 +93,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-**jsPlumb** is distributed under the GPLv2 and MIT Licenses: [jsPlumb](http://www.jsplumb.org)
+**jsPlumb** is distributed under the **GPLv2** and **MIT** Licenses: [jsPlumb](http://www.jsplumb.org)
 
-**jQuery** is distributed under the MIT License: [jQuery](http://jquery.com)
+**jQuery** is distributed under the **MIT** License: [jQuery](http://jquery.com)
