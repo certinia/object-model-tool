@@ -38,6 +38,14 @@ Reporting Issues & Enhancements
 
 Please report any issues using the github [issues](https://github.com/financialforcedev/object-model-tool/issues) feature. Suggestions / bug reports are welcome as are extensions containing additional functionality.
 
+Known Issues 
+------------
+
+1.   Known Salesforce Issue : There are certain elements in a salesforce object's xml definition that cannot be loaded by the Salesforce Jave API Object. These need to be hacked around:
+
+```objectAsString = objectAsString.replace("UTF-8", "UTF_8");
+   objectAsString = objectAsString.replace("<restrictedPicklist>true</restrictedPicklist>", "");```
+
 License
 -------
 
