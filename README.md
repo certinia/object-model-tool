@@ -43,6 +43,30 @@ Used to pull functional area information from an xml file in order to organise t
 ```
 in the ant ```<propertyfile></propertyfile``` to achieve this.
 
+####Retrieve Processors:
+
+_com.financialforce.objectmodelutil.model.processor.retrieve.**RetrieveProcessorLocal**_
+
+Used to pull object definitions from a local src folder.
+
+_com.financialforce.objectmodelutil.model.processor.retrieve.**RetrieveProcessorRemote**_
+
+Used to pull object definitions a salesforce org.
+
+####Output Processors:
+
+_com.financialforce.objectmodelutil.model.processor.output.**OutputProcessorCSV**_
+
+Creates a CSV file of objects / fields. (No input processor needed).
+
+_com.financialforce.objectmodelutil.model.processor.output.**OutputProcessorHTML**_
+
+Creates a HTML file of objects with supporting resources (No input processor needed).
+
+_com.financialforce.objectmodelutil.model.processor.output.**OutputProcessorHTMLwithFA**_
+
+Creates a HTML file of objects with supporting resources (_**InputProcessorXmlFile**_ needed).
+
 Build & Run
 -----------
 
