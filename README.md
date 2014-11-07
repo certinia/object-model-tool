@@ -15,7 +15,7 @@ As a result, I built an extensible, lightweight tool to generate and organize ob
 Summary
 -------
 
-This tool is a command line utility (that also has an ant entry point). The output it produces is contained within a 'htmlcharts' folder. The utility reads salesforce metadata, either locally or from a salesforce org, and parses this information into object-model/ERD charts. These charts are provided in html format along with several helper files (javascript, css, etc). The charts can be arranged by 'functional area', in other words, split down into logical groups for easy digestion.
+This tool is a command line utility (that also has an ant entry point). The output it produces is contained within a 'htmlcharts' folder. The utility reads salesforce metadata, either locally or from a salesforce org, and parses this information into object-model/ERD charts. These charts are provided in html format along with several helper files (javascript, css, etc). The charts can be arranged by functional area, in other words, split down into logical groups for easy digestion.
 
 Key Features
 ------------
@@ -48,7 +48,7 @@ Build & Run
 
 To build the utility, check out the master branch, navigate to the **_objectmodelutil_** folder and from your console, type **_ant_** (this assumes you have ant installed).
 
-To run the utility, type **'ant run'** after building. The default run command in **_build.xml_** points at the _objectmodelutil / **demo**_ folder and performs a local retreive of metadata, arranging the output into functional areas specified in _objectmodelutil / demo / **testareas.xml**_.
+To run the utility, type **_ant run_** after building. The default run command in **_build.xml_** points at the _objectmodelutil / **demo**_ folder and performs a local retreive of metadata, arranging the output into functional areas specified in _objectmodelutil / demo / **testareas.xml**_.
 
 Reporting Issues & Enhancements
 -------------------------------
