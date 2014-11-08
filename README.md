@@ -41,7 +41,7 @@ Used to pull functional area information from an xml file in order to organise t
 ```
 <entry key="input" operation="del" />
 ```
-in the ant ```<propertyfile></propertyfile``` to achieve this.
+in the ant ```<propertyfile></propertyfile>``` to achieve this.
 
 ####Retrieve Processors:
 
@@ -51,7 +51,7 @@ Used to pull object definitions from a local src folder.
 
 _com.financialforce.objectmodelutil.model.processor.retrieve.**RetrieveProcessorRemote**_
 
-Used to pull object definitions a salesforce org.
+Used to pull object definitions from a salesforce org.
 
 ####Output Processors:
 
