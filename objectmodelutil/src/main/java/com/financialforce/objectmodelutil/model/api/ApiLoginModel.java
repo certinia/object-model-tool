@@ -42,6 +42,10 @@ import com.sforce.ws.ConnectorConfig;
  * @version 1.0.0
  */
 public class ApiLoginModel {
+    
+    //the result
+    private static LoginResult res;
+    private static String lastuser;
 
     //the connector configuration data used to login.
     private ConnectorConfig partnerConfig = null;
@@ -63,7 +67,12 @@ public class ApiLoginModel {
 	 * @throws LoginException 
 	 */
 	public LoginResult login(String username, String password) throws ApiLoginException {
-		LoginResult loginResult = null;
+		
+        if (this.res != null && username.equals(lastuser)){
+            return this.res;
+        }
+        
+        LoginResult loginResult = null;
 		
 		try{
 			PartnerConnection partnerConnection = Connector.newConnection(partnerConfig);
@@ -71,7 +80,8 @@ public class ApiLoginModel {
 		} catch (Exception e){
 			throw new ApiLoginException(e);
 		}
-		
+		this.res = loginResult;
+		this.lastuser = username;
 		return loginResult;
 	}
 	
